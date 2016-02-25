@@ -8,6 +8,11 @@ use PHPLegends\Assets\Manager;
 class AssetsProvider extends ServiceProvider
 {
 
+	public function boot()
+	{
+		$this->package('phplegends/assets-laravel', 'assets');
+	}
+
 	public function register()
 	{
 		$this->app->bind('assets', function ($app) {
