@@ -1,0 +1,27 @@
+{
+    "name": "phplegends/assets-laravel",
+    "description": "Integration of phplegends/assets with laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Wallace de Souza Vizerra",
+            "email": "wallacemaxters@gmail.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Guilherme Nascimento",
+            "email": "guilherme@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : ">=5.4",
+        "illuminate/support" : "4.2.*",
+        "phplegends/assets" : "1.*"
+    },
+    "autoload" : {
+        "psr-4" : {
+            "PHPLegends\\AssetsLaravel\\" : "src/AssetsLaravel"
+        }
+    }
+}

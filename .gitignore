@@ -1,0 +1,4 @@
+vendor
+composer.lock
+laravel-assets.sublime-project
+laravel-assets.sublime-workspace
