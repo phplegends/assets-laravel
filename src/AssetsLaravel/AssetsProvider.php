@@ -17,7 +17,7 @@ class AssetsProvider extends ServiceProvider
 	{
 		$this->app->bind('assets', function ($app) {
 
-			$config = $this->app['config']->get('phplegends::assets');
+			$config = $this->app['config']->get('assets::assets');
 
 			return Manager::createFromConfig($config);
 		});
