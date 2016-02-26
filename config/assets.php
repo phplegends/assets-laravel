@@ -1,16 +1,33 @@
 <?php
 
 return array(
-
-	'path'     => public_path(),
 	
-	'base_uri' => '/',
+	/**
+	* Determine the base of URL used in asses
+	*/	
+	'base_uri'     => URL::to('/'),
 
+	/**
+	* Determines the folder of cache items for concatenator and image resize
+	*/
+	'compiled'     => '_compiled',
+	
+	/*
+	* Determine the realpath for work with concatenations and resize
+	*/
+	'path'         => public_path(),
+	
+	/**
+	* Create a alias (or namespaces) for paths
+	*/
 	'path_aliases' => array(
-		// 'home' => '{folder}/home'
+		/*'admin'  => '{folder}/admin',*/
+		/* 'css.admin' => 'css/dist/complex_directory/admin'*/
 	),
-
-	'compiled' => '_compiled',
-
-
+	
+	/**
+	* Determimes the version added in assets, to skip browser cache
+	* Can be used a closure or string
+	*/
+	'version'  => null
 );
